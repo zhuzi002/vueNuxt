@@ -1,0 +1,13 @@
+$global-color:red;
+$main-color: $global-color;
+$max-content-width: 1200px;
+$light-color:#f2f2f2;
+$sidebar-open-width:200px;
+$sidebar-close-width:60px;
+
+$border-radius:3,5,8,10,12,15;
+@each$val in $border-radius{
+    .border-radius-#{$val} {
+        border-radius: #{$val}px;
+    }
+}
